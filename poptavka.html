@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Poptávka | Mikeska – sečení a mulčování</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f1a0f;
+            color: white;
+        }
+
+        header {
+            background: #0b140b;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #6dff6d;
+            text-align: center;
+        }
+
+        .price-box {
+            background: #142614;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .price-box strong {
+            color: #6dff6d;
+        }
+
+        form {
+            background: #142614;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 25px;
+            background: #6dff6d;
+            color: black;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #55dd55;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div><strong>MIKESKA</strong> – sečení a mulčování</div>
+    <nav>
+        <a href="index.html">Domů</a>
+        <a href="sluzby.html">Služby</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Nezávazná poptávka služeb</h1>
+
+    <div class="price-box">
+        <p>
+            Každá zakázka je individuální. Cena se odvíjí zejména od:
+        </p>
+        <ul>
+            <li>rozlohy pozemku</li>
+            <li>sklonu svahu</li>
+            <li>hustoty porostu</li>
+            <li>přístupnosti terénu</li>
+        </ul>
+
+        <p>
+            <strong>Orientační ceny:</strong><br>
+            Sečení a mulčování od <strong>3 Kč / m²</strong><br>
+            Svahový a nepřístupný terén od <strong>5 Kč / m²</strong>
+        </p>
+
+        <p>
+            Pro přesnou kalkulaci mi pošlete poptávku – ozvu se co nejdříve.
+        </p>
+    </div>
+
+    <form action="https://formsubmit.co/TVUJEMAIL@EMAIL.CZ" method="POST">
+        <!-- ochrana proti spamu -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nová poptávka z webu rc-mulcovani.cz">
+
+        <label>Jméno a příjmení</label>
+        <input type="text" name="Jméno" required>
+
+        <label>Telefon</label>
+        <input type="tel" name="Telefon" required>
+
+        <label>E-mail</label>
+        <input type="email" name="Email" required>
+
+        <label>Lokalita zakázky</label>
+        <input type="text" name="Lokalita" required>
+
+        <label>Přibližná plocha (m²)</label>
+        <input type="number" name="Plocha">
+
+        <label>Typ terénu</label>
+        <select name="Terén">
+            <option>Rovina</option>
+            <option>Mírný svah</option>
+            <option>Strmý svah</option>
+            <option>Obtížně přístupný terén</option>
+        </select>
+
+        <label>Popis zakázky</label>
+        <textarea name="Popis" placeholder="Např. zanedbaný svah u domu, vysoká tráva, náletové dřeviny..."></textarea>
+
+        <button type="submit">Odeslat poptávku</button>
+    </form>
+
+</div>
+
+</body>
+</html>
