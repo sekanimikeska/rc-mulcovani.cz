@@ -2,86 +2,73 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>RC Mulčování</title>
-</head>
-<body>
-  <header class="header">
-  <img src="logo.png" alt="RC Mulčování" class="logo">
-</header>
-  <h1>RC Mulčování</h1>
-  <p>Profesionální mulčování pozemků</p>
- 
-</body>
-</html>
-20:13
-Petr
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
   <title>RC Mulčování | Hodonín a Uherské Hradiště</title>
   <meta name="description" content="Profesionální mulčování zahrad, luk a pozemků v okrese Hodonín a Uherské Hradiště. Mulčování a sečení tam, kde běžná technika nestačí.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f5f7f8;color:#222}
-    header {background:#1f7a3f;color:white;padding:60px 20px;text-align:center}
-    header h1 {margin:0;font-size:42px}
-    header h2 {margin:15px 0 0;font-weight:normal}
-    section {padding:60px 20px;max-width:1100px;margin:auto}
-    h3 {color:#1f7a3f}
-    .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-    .box {background:white;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
-    footer {background:#222;color:white;text-align:center;padding:30px 20px}
-  </style>
-</head>
-<body>
+    * {box-sizing:border-box;margin:0;padding:0}
+    body {font-family:'Poppins',sans-serif;background:#0f1a14;color:#e6e6e6;line-height:1.6}
 
-<header>
-  <h1>RC Mulčování</h1>
-  <h2>Mulčování a sečení tam, kde běžná technika nestačí</h2>
-  <p>Profesionální mulčování pozemků v okrese Hodonín a Uherské Hradiště</p>
-</header>
+    a {color:inherit;text-decoration:none}
 
-<section>
-  <h3>O nás</h3>
-  <p>Jsme RC Mulčování – specialista na profesionální mulčování a sečení pozemků v okrese Hodonín a Uherské Hradiště. Zajišťujeme údržbu zahrad, luk, stavebních parcel, sadů i neudržovaných pozemků. Používáme moderní techniku, která si poradí i s náročným terénem a svahy, kam se běžná technika nedostane.</p>
-</section>
+    /* ===== HERO ===== */
+    .hero {
+      height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("hero.jpg") center/cover no-repeat;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
 
-<section>
-  <h3>Naše služby</h3>
-  <div class="services">
-    <div class="box"><strong>Mulčování zahrad</strong><br>Pravidelná i jednorázová údržba zahrad bez nutnosti odvozu hmoty.</div>
-    <div class="box"><strong>Mulčování luk a pastvin</strong><br>Údržba rozsáhlých ploch, omezení náletů a podpora růstu trávy.</div>
-    <div class="box"><strong>Mulčování stavebních parcel</strong><br>Vyčištění pozemku před stavbou nebo prodejem.</div>
-    <div class="box"><strong>Likvidace náletových dřevin</strong><br>Odstranění křovin a zarostlých ploch.</div>
-    <div class="box"><strong>Údržba firemních ploch</strong><br>Pravidelná údržba areálů a obecních pozemků.</div>
-  </div>
-</section>
+    .hero img {
+      width:140px;
+      margin-bottom:25px;
+    }
 
-<section>
-  <h3>Proč si vybrat nás</h3>
-  <ul>
-    <li>Specializace na náročný terén</li>
-    <li>Moderní a výkonná technika</li>
-    <li>Rychlá domluva termínu</li>
-    <li>Férové ceny</li>
-    <li>Znalost regionu Hodonín a Uherské Hradiště</li>
-  </ul>
-</section>
+    .hero h1 {
+      font-size:52px;
+      letter-spacing:2px;
+    }
 
-<section>
-  <h3>Kontakt</h3>
-  <p><strong>RC Mulčování</strong></p>
-  <p>📍 Okres Hodonín, Uherské Hradiště</p>
-  <p>📞 Telefon: +420 774 855 738</p>
-  <p>✉️ Email: sekani.mikeska@gmail.com</p>
-  <p>Petr Mikéska</p>
-  <p>IČO: 09627421</p>
-</section>
+    .hero h2 {
+      margin-top:15px;
+      font-weight:300;
+      font-size:22px;
+      max-width:800px;
+    }
 
-<footer>
-  <p>&copy; 2026 RC Mulčování</p>
-</footer>
+    .btn {
+      margin-top:30px;
+      display:inline-block;
+      padding:15px 35px;
+      background:#2ecc71;
+      color:#0f1a14;
+      font-weight:600;
+      border-radius:40px;
+      transition:0.3s;
+    }
 
-</body>
-</html>
+    .btn:hover {
+      background:#27ae60;
+      transform:translateY(-2px);
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding:80px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h3 {
+      text-align:center;
+      margin-bottom:50px;
+
