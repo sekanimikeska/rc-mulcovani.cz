@@ -71,4 +71,140 @@
     h3 {
       text-align:center;
       margin-bottom:50px;
+      font-size:32px;
+      color:#2ecc71;
+    }
 
+    /* ===== ABOUT ===== */
+    .about {
+      text-align:center;
+      max-width:900px;
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card {
+      background:#16261d;
+      padding:30px;
+      border-radius:12px;
+      border:1px solid #1f3b2c;
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+      border-color:#2ecc71;
+    }
+
+    .card strong {
+      display:block;
+      margin-bottom:10px;
+      font-size:18px;
+      color:#2ecc71;
+    }
+
+    /* ===== WHY US ===== */
+    .why ul {
+      max-width:600px;
+      margin:auto;
+      list-style:none;
+    }
+
+    .why li {
+      padding:12px 0;
+      border-bottom:1px solid #1f3b2c;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      text-align:center;
+      background:#16261d;
+      border-radius:20px;
+    }
+
+    .contact p {
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align:center;
+      padding:30px 20px;
+      background:#0b120e;
+      color:#777;
+      margin-top:80px;
+    }
+
+    @media(max-width:600px){
+      .hero h1 {font-size:38px}
+      .hero h2 {font-size:18px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="logo.png" alt="RC Mulčování">
+  <h1>RC Mulčování</h1>
+  <h2>Mulčování a sečení tam, kde běžná technika nestačí</h2>
+  <a href="tel:+420774855738" class="btn">📞 Zavolat</a>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+  <h3>O nás</h3>
+  <p>
+    Jsme RC Mulčování – specialista na profesionální mulčování a sečení pozemků
+    v okrese Hodonín a Uherské Hradiště. Zajišťujeme údržbu zahrad, luk,
+    stavebních parcel, sadů i neudržovaných ploch. Používáme moderní techniku,
+    která si poradí i s náročným terénem a svahy, kam se běžná technika nedostane.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h3>Naše služby</h3>
+  <div class="services">
+    <div class="card"><strong>Mulčování zahrad</strong>Pravidelná i jednorázová údržba bez nutnosti odvozu hmoty.</div>
+    <div class="card"><strong>Mulčování luk a pastvin</strong>Údržba rozsáhlých ploch, omezení náletů a podpora růstu trávy.</div>
+    <div class="card"><strong>Mulčování stavebních parcel</strong>Vyčištění pozemku před stavbou nebo prodejem.</div>
+    <div class="card"><strong>Likvidace náletových dřevin</strong>Odstranění křovin a zarostlých ploch.</div>
+    <div class="card"><strong>Údržba firemních ploch</strong>Pravidelná údržba areálů a obecních pozemků.</div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <h3>Proč si vybrat nás</h3>
+  <ul>
+    <li>✔ Specializace na náročný terén</li>
+    <li>✔ Moderní a výkonná technika</li>
+    <li>✔ Rychlá domluva termínu</li>
+    <li>✔ Férové ceny</li>
+    <li>✔ Znalost regionu Hodonín a Uherské Hradiště</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h3>Kontakt</h3>
+  <p><strong>RC Mulčování – Petr Mikéska</strong></p>
+  <p>📍 Okres Hodonín, Uherské Hradiště</p>
+  <p>📞 +420 774 855 738</p>
+  <p>✉️ sekani.mikeska@gmail.com</p>
+  <p>IČO: 09627421</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 RC Mulčování</p>
+</footer>
+
+</body>
+</html>
