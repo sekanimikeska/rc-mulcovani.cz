@@ -32,6 +32,31 @@
       margin: 8px 0;
       font-size: 18px;
     }
+
+    /* === PLOVOUCÍ TLAČÍTKO VOLAT === */
+    .call-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 65px;
+      height: 65px;
+      background: #2ecc71;
+      color: #0f1a14;
+      border-radius: 50%;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      z-index: 9999;
+      transition: 0.3s;
+    }
+
+    .call-float:hover {
+      background: #27ae60;
+      transform: scale(1.08);
+    }
   </style>
 </head>
 <body>
@@ -96,7 +121,6 @@
   </ul>
 </section>
 
-<!-- ===== KONTAKT S MAPOU ===== -->
 <section id="kontakt" class="contact">
   <h2>Kde působíme</h2>
 
@@ -119,10 +143,9 @@
 <footer>
   <p>© 2026 Mikeska – strojní sečení a mulčování</p>
 </footer>
+
 <!-- Plovoucí tlačítko Zavolat -->
-<a href="tel:+420774855738" class="call-float">
-  📞
-</a>
+<a href="tel:+420774855738" class="call-float">📞</a>
 
 </body>
 </html>
