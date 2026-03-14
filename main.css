@@ -209,7 +209,8 @@ footer {
     font-size: 38px;
   }
 
-  nav {
-    display: none;
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
   }
 }
