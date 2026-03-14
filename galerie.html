@@ -2,6 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <title>Ukázky práce | RC mulčování Mikeska</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
@@ -15,15 +16,22 @@ font-family:Arial;
 margin:0;
 }
 
+/* NADPIS */
+
 .gallery{
 max-width:1100px;
 margin:auto;
-padding:80px 20px;
+padding:120px 20px 80px 20px;
 }
 
 .gallery h1{
 text-align:center;
+font-size:40px;
 margin-bottom:10px;
+}
+
+.gallery h1 span{
+color:#2ecc71;
 }
 
 .gallery p{
@@ -31,6 +39,8 @@ text-align:center;
 margin-bottom:60px;
 color:#ccc;
 }
+
+/* SLIDER */
 
 .ba-container{
 position:relative;
@@ -64,6 +74,8 @@ opacity:0;
 cursor:ew-resize;
 }
 
+/* čára mezi obrázky */
+
 .ba-container::after{
 content:"";
 position:absolute;
@@ -75,13 +87,15 @@ background:white;
 pointer-events:none;
 }
 
+/* PŘED / PO */
+
 .ba-label{
 position:absolute;
 top:15px;
-padding:5px 10px;
+padding:6px 12px;
 background:rgba(0,0,0,0.6);
 border-radius:6px;
-font-size:12px;
+font-size:13px;
 }
 
 .ba-label.before{
@@ -97,9 +111,21 @@ right:15px;
 
 <body>
 
+<header class="topbar">
+  <div class="topbar-inner">
+    <img src="logo.png" class="logo" alt="Mikeska">
+
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="galerie.html">Ukázky práce</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
 <section class="gallery">
 
-<h1>Ukázky naší práce</h1>
+<h1><span>Ukázky</span> naší práce</h1>
 <p>Před a po mulčování svahů a neudržovaných ploch.</p>
 
 <div class="ba-container">
@@ -107,10 +133,10 @@ right:15px;
 <div class="ba-label before">PŘED</div>
 <div class="ba-label after">PO</div>
 
-<img src="pred1.jpg" alt="">
+<img src="po1.jpg">
 
 <div class="ba-after">
-<img src="po1.jpg" alt="">
+<img src="pred1.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
@@ -122,10 +148,10 @@ right:15px;
 <div class="ba-label before">PŘED</div>
 <div class="ba-label after">PO</div>
 
-<img src="pred2.jpg" alt="">
+<img src="po2.jpg">
 
 <div class="ba-after">
-<img src="po2.jpg" alt="">
+<img src="pred2.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
@@ -137,10 +163,10 @@ right:15px;
 <div class="ba-label before">PŘED</div>
 <div class="ba-label after">PO</div>
 
-<img src="pred3.jpg" alt="">
+<img src="po3.jpg">
 
 <div class="ba-after">
-<img src="po3.jpg" alt="">
+<img src="pred3.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
