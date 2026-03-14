@@ -10,14 +10,14 @@ body {
   color: #eaeaea;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 .topbar {
   position: fixed;
   top: 0;
   width: 100%;
   height: 70px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0,0,0,0.9);
   z-index: 1000;
 }
 
@@ -33,7 +33,6 @@ body {
 
 .logo {
   height: 42px;
-  max-width: 180px;
 }
 
 nav {
@@ -42,11 +41,10 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: white;
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
 }
 
 nav a:hover {
@@ -55,19 +53,18 @@ nav a:hover {
 
 .btn-call {
   background: #6bcf4a;
-  color: #000;
+  color: black;
   padding: 10px 18px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
   height: calc(100vh - 70px);
   background: url("hero.jpg") center/cover no-repeat;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,140 +74,50 @@ nav a:hover {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
   position: relative;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 52px;
-  margin-bottom: 10px;
-  line-height: 1.2;
 }
 
 .hero h1 span {
   color: #6bcf4a;
 }
 
-.hero p {
-  font-size: 22px;
-  margin-bottom: 30px;
+/* MOBILE MENU */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
-/* ================= BUTTONS ================= */
+@media (max-width:768px){
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+padding:20px;
 }
 
-.btn-primary {
-  background: #6bcf4a;
-  color: #000;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+nav a{
+margin:10px 0;
+font-size:18px;
 }
 
-.btn-secondary {
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
+nav.active{
+display:flex;
 }
 
-/* ================= SECTIONS ================= */
-
-.section {
-  padding: 100px 20px;
-  text-align: center;
+.menu-toggle{
+display:block;
 }
 
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.dark {
-  background: #151515;
-}
-
-/* ================= CARDS ================= */
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.card {
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #6bcf4a;
-}
-
-/* ================= BENEFITS ================= */
-
-.benefits {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: auto;
-}
-
-.benefits li {
-  margin: 15px 0;
-  font-size: 18px;
-}
-
-/* ================= CONTACT ================= */
-
-.contact {
-  background: #0f0f0f;
-}
-
-.contact-box {
-  background: #1e1e1e;
-  max-width: 500px;
-  margin: auto;
-  padding: 30px;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  nav a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
 }
