@@ -1,8 +1,118 @@
-pred1.jpg
-po1.jpg
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Ukázky práce | RC mulčování Mikeska</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
 
-pred2.jpg
-po2.jpg
+<style>
 
-pred3.jpg
-po3.jpg
+body{
+background:#0f1a14;
+color:white;
+font-family:Arial;
+margin:0;
+}
+
+.gallery{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.gallery h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.gallery p{
+text-align:center;
+margin-bottom:60px;
+color:#ccc;
+}
+
+.ba-container{
+position:relative;
+overflow:hidden;
+border-radius:20px;
+margin-bottom:50px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.ba-container img{
+width:100%;
+display:block;
+}
+
+.ba-after{
+position:absolute;
+top:0;
+left:0;
+width:50%;
+overflow:hidden;
+}
+
+.ba-slider{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+opacity:0;
+cursor:ew-resize;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="gallery">
+
+<h1>Ukázky naší práce</h1>
+<p>Před a po mulčování svahů a neudržovaných ploch.</p>
+
+<div class="ba-container">
+<img src="pred1.jpg" alt="">
+<div class="ba-after">
+<img src="po1.jpg" alt="">
+</div>
+<input type="range" min="0" max="100" value="50" class="ba-slider">
+</div>
+
+<div class="ba-container">
+<img src="pred2.jpg" alt="">
+<div class="ba-after">
+<img src="po2.jpg" alt="">
+</div>
+<input type="range" min="0" max="100" value="50" class="ba-slider">
+</div>
+
+<div class="ba-container">
+<img src="pred3.jpg" alt="">
+<div class="ba-after">
+<img src="po3.jpg" alt="">
+</div>
+<input type="range" min="0" max="100" value="50" class="ba-slider">
+</div>
+
+</section>
+
+<script>
+
+document.querySelectorAll(".ba-container").forEach(container => {
+
+const slider = container.querySelector(".ba-slider");
+const after = container.querySelector(".ba-after");
+
+slider.addEventListener("input", function(){
+after.style.width = this.value + "%";
+});
+
+});
+
+</script>
+
+</body>
+</html>
