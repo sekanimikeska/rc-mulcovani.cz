@@ -19,18 +19,30 @@ text-align:center;
 .gallery h1{
 font-size:40px;
 margin-bottom:10px;
-}
-
-.gallery h1 span{
 color:#6bcf4a;
 }
 
 .gallery p{
-color:#aaa;
+color:#ffffff;
 margin-bottom:40px;
 max-width:800px;
 margin-left:auto;
 margin-right:auto;
+}
+
+/* tlačítko domů */
+
+.home-btn{
+position:fixed;
+top:20px;
+right:20px;
+background:#6bcf4a;
+color:#000;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+z-index:9999;
 }
 
 /* BLOK REALIZACE */
@@ -79,27 +91,17 @@ grid-template-columns:1fr;
 
 <body>
 
-<header class="topbar">
-<div class="topbar-inner">
-
-<img src="logo.png" class="logo" alt="Mikeska">
-
-<nav>
-<a href="index.html">Domů</a>
-</nav>
-
-</div>
-</header>
-
+<a href="index.html" class="home-btn">Domů</a>
 
 <section class="gallery">
 
-<h1><span>Ukázky</span> naší práce</h1>
+<h1>Ukázky práce</h1>
 
 <p>
 Na této stránce najdete ukázky realizací mulčování svahů a sečení neudržovaných pozemků.
 Práce provádíme především v okresech Hodonín a Uherské Hradiště – například ve městech
-Hodonín, Kyjov, Veselí nad Moravou, Strážnice, Staré Město nebo Kunovice.
+Hodonín, Kyjov, Veselí nad Moravou, Strážnice, Staré Město, Blatnice pod Sv. Antonínkem,
+Bzenec, Uherský Brod nebo Hluk.
 </p>
 
 
@@ -158,7 +160,6 @@ Hodonín, Kyjov, Veselí nad Moravou, Strážnice, Staré Město nebo Kunovice.
 </div>
 
 </div>
-
 
 </section>
 
