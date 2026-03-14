@@ -36,8 +36,9 @@ color:#ccc;
 position:relative;
 overflow:hidden;
 border-radius:20px;
-margin-bottom:50px;
+margin-bottom:60px;
 box-shadow:0 10px 30px rgba(0,0,0,0.5);
+border:1px solid #1f3b2c;
 }
 
 .ba-container img{
@@ -63,6 +64,34 @@ opacity:0;
 cursor:ew-resize;
 }
 
+.ba-container::after{
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+left:50%;
+width:3px;
+background:white;
+pointer-events:none;
+}
+
+.ba-label{
+position:absolute;
+top:15px;
+padding:5px 10px;
+background:rgba(0,0,0,0.6);
+border-radius:6px;
+font-size:12px;
+}
+
+.ba-label.before{
+left:15px;
+}
+
+.ba-label.after{
+right:15px;
+}
+
 </style>
 </head>
 
@@ -74,27 +103,48 @@ cursor:ew-resize;
 <p>Před a po mulčování svahů a neudržovaných ploch.</p>
 
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="pred1.jpg" alt="">
+
 <div class="ba-after">
 <img src="po1.jpg" alt="">
 </div>
+
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="pred2.jpg" alt="">
+
 <div class="ba-after">
 <img src="po2.jpg" alt="">
 </div>
+
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="pred3.jpg" alt="">
+
 <div class="ba-after">
 <img src="po3.jpg" alt="">
 </div>
+
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
 </section>
