@@ -2,18 +2,12 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <title>Ukázky práce | RC mulčování Mikeska</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 
 <style>
-
-body{
-background:#0f0f0f;
-color:#eaeaea;
-margin:0;
-font-family:"Segoe UI", Arial, sans-serif;
-}
 
 .gallery{
 max-width:1100px;
@@ -36,30 +30,7 @@ color:#aaa;
 margin-bottom:60px;
 }
 
-/* logo */
-
-.gallery-logo{
-margin-bottom:30px;
-}
-
-.gallery-logo img{
-height:60px;
-}
-
-/* tlačítko domů */
-
-.home-btn{
-display:inline-block;
-margin-bottom:40px;
-background:#6bcf4a;
-color:#000;
-padding:10px 20px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* slider */
+/* SLIDER */
 
 .ba-container{
 position:relative;
@@ -104,25 +75,56 @@ width:3px;
 background:white;
 }
 
+/* PŘED / PO */
+
+.ba-label{
+position:absolute;
+top:15px;
+padding:6px 12px;
+background:rgba(0,0,0,0.6);
+border-radius:6px;
+font-size:13px;
+}
+
+.ba-label.before{
+left:15px;
+}
+
+.ba-label.after{
+right:15px;
+}
+
 </style>
 </head>
 
 <body>
 
+<header class="topbar">
+  <div class="topbar-inner">
+    <img src="logo.png" class="logo" alt="Mikeska">
+
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="index.html#sluzby">Služby</a>
+      <a href="galerie.html">Ukázky práce</a>
+      <a href="index.html#vyhody">Proč my</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+
+    <a href="poptavka.html" class="btn-call">Poptávka</a>
+  </div>
+</header>
+
 <section class="gallery">
-
-<div class="gallery-logo">
-<img src="logo.png" alt="Mikeska">
-</div>
-
-<a href="index.html" class="home-btn">← Domů</a>
 
 <h1><span>Ukázky</span> naší práce</h1>
 <p>Před a po mulčování svahů a neudržovaných ploch.</p>
 
-<!-- 1 -->
-
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="po1.jpg">
 
 <div class="ba-after">
@@ -130,11 +132,14 @@ background:white;
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
-<!-- 2 -->
-
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="po2.jpg">
 
 <div class="ba-after">
@@ -142,11 +147,14 @@ background:white;
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
-<!-- 3 -->
-
 <div class="ba-container">
+
+<div class="ba-label before">PŘED</div>
+<div class="ba-label after">PO</div>
+
 <img src="po3.jpg">
 
 <div class="ba-after">
@@ -154,6 +162,7 @@ background:white;
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
+
 </div>
 
 </section>
