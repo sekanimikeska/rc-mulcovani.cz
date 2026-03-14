@@ -2,8 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<title>Ukázky práce | RC mulčování Mikeska</title>
+<title>Ukázky práce | Mikeska</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 
@@ -12,32 +11,15 @@
 .gallery{
 max-width:1100px;
 margin:auto;
-padding:120px 20px 60px 20px;
+padding:120px 20px;
 text-align:center;
 }
-
-.gallery h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.gallery h1 span{
-color:#6bcf4a;
-}
-
-.gallery p{
-color:#aaa;
-margin-bottom:60px;
-}
-
-/* SLIDER */
 
 .ba-container{
 position:relative;
 overflow:hidden;
-border-radius:14px;
 margin-bottom:60px;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+border-radius:12px;
 }
 
 .ba-container img{
@@ -63,8 +45,6 @@ opacity:0;
 cursor:ew-resize;
 }
 
-/* čára */
-
 .ba-container::after{
 content:"";
 position:absolute;
@@ -75,55 +55,39 @@ width:3px;
 background:white;
 }
 
-/* PŘED / PO */
-
-.ba-label{
-position:absolute;
-top:15px;
-padding:6px 12px;
-background:rgba(0,0,0,0.6);
-border-radius:6px;
-font-size:13px;
-}
-
-.ba-label.before{
-left:15px;
-}
-
-.ba-label.after{
-right:15px;
-}
-
 </style>
+
 </head>
 
 <body>
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <img src="logo.png" class="logo" alt="Mikeska">
+<div class="topbar-inner">
 
-    <nav>
-      <a href="index.html">Domů</a>
-      <a href="index.html#sluzby">Služby</a>
-      <a href="galerie.html">Ukázky práce</a>
-      <a href="index.html#vyhody">Proč my</a>
-      <a href="index.html#kontakt">Kontakt</a>
-    </nav>
+<img src="logo.png" class="logo">
 
-    <a href="index.html" class="btn-call">Domů</a>
-  </div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="menu">
+<a href="index.html">Domů</a>
+<a href="index.html#sluzby">Služby</a>
+<a href="galerie.html">Ukázky práce</a>
+<a href="index.html#vyhody">Proč my</a>
+<a href="index.html#kontakt">Kontakt</a>
+<a href="poptavka.html" class="btn-call">Poptávka</a>
+</nav>
+
+</div>
 </header>
+
 
 <section class="gallery">
 
-<h1><span>Ukázky</span> naší práce</h1>
-<p>Před a po mulčování svahů a neudržovaných ploch.</p>
+<h1>Ukázky práce</h1>
+<p>Před a po mulčování</p>
+
 
 <div class="ba-container">
-
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
 
 <img src="po1.jpg">
 
@@ -135,10 +99,9 @@ right:15px;
 
 </div>
 
-<div class="ba-container">
 
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
+
+<div class="ba-container">
 
 <img src="po2.jpg">
 
@@ -150,10 +113,9 @@ right:15px;
 
 </div>
 
-<div class="ba-container">
 
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
+
+<div class="ba-container">
 
 <img src="po3.jpg">
 
@@ -165,9 +127,15 @@ right:15px;
 
 </div>
 
+
 </section>
 
+
 <script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
 
 document.querySelectorAll(".ba-container").forEach(container => {
 
@@ -181,6 +149,7 @@ after.style.width = this.value + "%";
 });
 
 </script>
+
 
 </body>
 </html>
