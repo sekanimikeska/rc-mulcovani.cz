@@ -2,154 +2,31 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>Ukázky práce | Mikeska</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ukázky práce</title>
 <link rel="stylesheet" href="main.css">
-
-<style>
-
-.gallery{
-max-width:1100px;
-margin:auto;
-padding:120px 20px;
-text-align:center;
-}
-
-.ba-container{
-position:relative;
-overflow:hidden;
-margin-bottom:60px;
-border-radius:12px;
-}
-
-.ba-container img{
-width:100%;
-display:block;
-}
-
-.ba-after{
-position:absolute;
-top:0;
-left:0;
-width:50%;
-overflow:hidden;
-}
-
-.ba-slider{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-opacity:0;
-cursor:ew-resize;
-}
-
-.ba-container::after{
-content:"";
-position:absolute;
-top:0;
-bottom:0;
-left:50%;
-width:3px;
-background:white;
-}
-
-</style>
-
 </head>
 
 <body>
 
-<header class="topbar">
-<div class="topbar-inner">
+<div style="text-align:center;padding:40px">
 
-<img src="logo.png" class="logo">
+<img src="logo.png" style="height:60px"><br><br>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<a href="index.html" class="btn-primary">Domů</a>
 
-<nav id="menu">
-<a href="index.html">Domů</a>
-<a href="index.html#sluzby">Služby</a>
-<a href="galerie.html">Ukázky práce</a>
-<a href="index.html#vyhody">Proč my</a>
-<a href="index.html#kontakt">Kontakt</a>
-<a href="poptavka.html" class="btn-call">Poptávka</a>
-</nav>
+<h1 style="margin-top:40px">Ukázky práce</h1>
 
-</div>
-</header>
+<br>
 
+<img src="před1.jpg" style="width:45%;border-radius:10px">
+<img src="po1.jpg" style="width:45%;border-radius:10px">
 
-<section class="gallery">
+<br><br>
 
-<h1>Ukázky práce</h1>
-<p>Před a po mulčování</p>
-
-
-<div class="ba-container">
-
-<img src="po1.jpg">
-
-<div class="ba-after">
-<img src="před1.jpg">
-</div>
-
-<input type="range" min="0" max="100" value="50" class="ba-slider">
+<img src="před2.jpg" style="width:45%;border-radius:10px">
+<img src="po2.jpg" style="width:45%;border-radius:10px">
 
 </div>
-
-
-
-<div class="ba-container">
-
-<img src="po2.jpg">
-
-<div class="ba-after">
-<img src="před2.jpg">
-</div>
-
-<input type="range" min="0" max="100" value="50" class="ba-slider">
-
-</div>
-
-
-
-<div class="ba-container">
-
-<img src="po3.jpg">
-
-<div class="ba-after">
-<img src="před3.jpg">
-</div>
-
-<input type="range" min="0" max="100" value="50" class="ba-slider">
-
-</div>
-
-
-</section>
-
-
-<script>
-
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("active");
-}
-
-document.querySelectorAll(".ba-container").forEach(container => {
-
-const slider = container.querySelector(".ba-slider");
-const after = container.querySelector(".ba-after");
-
-slider.addEventListener("input", function(){
-after.style.width = this.value + "%";
-});
-
-});
-
-</script>
-
 
 </body>
 </html>
