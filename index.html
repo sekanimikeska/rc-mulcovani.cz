@@ -1,147 +1,211 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <title>RC mulčování a sečení pozemků | Mikeska</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<title>Mulčování svahů a sekání pozemků | Hodonín a Uherské Hradiště</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
 
-  <style>
-    .map-box {
-      margin-top: 40px;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid #1f3b2c;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+<style>
 
-    .map-box iframe {
-      width: 100%;
-      height: 420px;
-      border: 0;
-    }
+.map-box{
+margin-top:40px;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #1f3b2c;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
 
-    .contact {
-      text-align: center;
-      padding: 100px 20px;
-      background: #0f1a14;
-    }
+.map-box iframe{
+width:100%;
+height:420px;
+border:0;
+}
 
-    .contact p {
-      margin: 8px 0;
-      font-size: 18px;
-    }
+.contact{
+text-align:center;
+padding:100px 20px;
+background:#0f1a14;
+}
 
-    .call-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 65px;
-      height: 65px;
-      background: #2ecc71;
-      color: #0f1a14;
-      border-radius: 50%;
-      font-size: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      z-index: 9999;
-      transition: 0.3s;
-    }
+.contact p{
+margin:8px 0;
+font-size:18px;
+}
 
-    .call-float:hover {
-      background: #27ae60;
-      transform: scale(1.08);
-    }
-  </style>
+.call-float{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#2ecc71;
+color:#0f1a14;
+border-radius:50%;
+font-size:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+z-index:9999;
+transition:0.3s;
+}
+
+.call-float:hover{
+background:#27ae60;
+transform:scale(1.08);
+}
+
+/* sekce lokality */
+
+.lokality{
+padding:100px 20px;
+text-align:center;
+background:#151515;
+}
+
+.lokality h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.lokality ul{
+list-style:none;
+padding:0;
+max-width:700px;
+margin:auto;
+}
+
+.lokality li{
+margin:10px 0;
+font-size:18px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <img src="logo.png" class="logo" alt="Mikeska">
+<div class="topbar-inner">
 
-    <nav>
-      <a href="#sluzby">Služby</a>
-      <a href="#vyhody">Proč my</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+<img src="logo.png" class="logo" alt="Mikeska">
 
-    <a href="poptavka.html" class="btn-call">Poptávka</a>
-  </div>
+<nav>
+<a href="#sluzby">Služby</a>
+<a href="#vyhody">Proč my</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<a href="poptavka.html" class="btn-call">Poptávka</a>
+
+</div>
 </header>
 
 <section class="hero">
-  <div class="hero-overlay"></div>
+<div class="hero-overlay"></div>
 
-  <div class="hero-content">
-    <h1>RC MULČOVÁNÍ<br><span>A SEČENÍ SVAHŮ</span></h1>
-    <p>Okres Hodonín a Uherské Hradiště</p>
+<div class="hero-content">
 
-    <div class="hero-buttons">
-      <a href="#sluzby" class="btn-primary">Naše služby</a>
-      <a href="galerie.html" class="btn-secondary">Ukázky práce</a>
-      <a href="#kontakt" class="btn-secondary">Kontaktujte nás</a>
-    </div>
-  </div>
+<h1>RC MULČOVÁNÍ<br><span>A SEČENÍ SVAHŮ</span></h1>
+
+<p>Okres Hodonín a Uherské Hradiště</p>
+
+<div class="hero-buttons">
+<a href="#sluzby" class="btn-primary">Naše služby</a>
+<a href="galerie.html" class="btn-secondary">Ukázky práce</a>
+<a href="#kontakt" class="btn-secondary">Kontaktujte nás</a>
+</div>
+
+</div>
 </section>
+
 
 <section id="sluzby" class="section">
-  <h2>Naše služby</h2>
 
-  <div class="cards">
-    <div class="card">
-      <h3>RC mulčování</h3>
-      <p>Mulčování svahů, sadů a neudržovaných ploch pomocí dálkově řízené techniky.</p>
-    </div>
+<h2>Naše služby</h2>
 
-    <div class="card">
-      <h3>Sečení svahů</h3>
-      <p>Bezpečné sečení prudkých svahů, náspů a těžko dostupných míst.</p>
-    </div>
+<div class="cards">
 
-    <div class="card">
-      <h3>Likvidace náletů</h3>
-      <p>Odstranění náletových dřevin tam, kde běžná technika nestačí.</p>
-    </div>
-  </div>
+<div class="card">
+<h3>RC mulčování</h3>
+<p>Mulčování svahů, sadů a neudržovaných ploch pomocí dálkově řízené techniky.</p>
+</div>
+
+<div class="card">
+<h3>Sečení svahů</h3>
+<p>Bezpečné sečení prudkých svahů, náspů a těžko dostupných míst.</p>
+</div>
+
+<div class="card">
+<h3>Likvidace náletů</h3>
+<p>Odstranění náletových dřevin tam, kde běžná technika nestačí.</p>
+</div>
+
+</div>
+
 </section>
+
 
 <section id="vyhody" class="section dark">
-  <h2>Proč si vybrat právě nás</h2>
 
-  <ul class="benefits">
-    <li>Moderní RC technika pro extrémní terén</li>
-    <li>Bezpečná práce na prudkých svazích</li>
-    <li>Rychlá domluva a flexibilní termíny</li>
-    <li>Působíme v okrese Hodonín a Uherské Hradiště</li>
-  </ul>
+<h2>Proč si vybrat právě nás</h2>
+
+<ul class="benefits">
+<li>Moderní RC technika pro extrémní terén</li>
+<li>Bezpečná práce na prudkých svazích</li>
+<li>Rychlá domluva a flexibilní termíny</li>
+<li>Působíme v okrese Hodonín a Uherské Hradiště</li>
+</ul>
+
 </section>
+
+
+<section class="lokality">
+
+<h2>Kde pracujeme</h2>
+
+<ul>
+<li>Hodonín</li>
+<li>Uherské Hradiště</li>
+<li>Veselí nad Moravou</li>
+<li>Strážnice</li>
+<li>Kyjov</li>
+<li>Staré Město</li>
+<li>Blatnice pod Sv. Antonínkem</li>
+<li>Bzenec</li>
+<li>Uherský Brod</li>
+  <li>Hluk</li>
+</ul>
+
+</section>
+
 
 <section id="kontakt" class="contact">
-  <h2>Kde působíme</h2>
 
-  <p><strong>RC Mulčování – Petr Mikéska</strong></p>
-  <p>📍 Veselí nad Moravou, Hodonín, Uherský Brod, Uherské Hradiště</p>
-  <p>📞 +420 774 855 738</p>
-  <p>✉️ sekani.mikeska@gmail.com</p>
-  <p>IČO: 09627421</p>
+<h2>Kde působíme</h2>
 
-  <div class="map-box">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.0403656281746!2d17.45897609594588!3d48.94864586032174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84e4dd123d254827%3A0x93973300ba936ea3!2zUkMgLSBtdWzEjW92w6Fuw60gTWlrw6lza2E!5e0!3m2!1scs!2scz!4v1768847671825!5m2!1scs!2scz"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-  </div>
+<p><strong>RC Mulčování – Petr Mikeska</strong></p>
+<p>📍 Okres Hodonín, Uherské Hradiště</p>
+<p>📞 +420 774 855 738</p>
+<p>✉️ sekani.mikeska@gmail.com</p>
+<p>IČO: 09627421</p>
+
+<div class="map-box">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.0403656281746!2d17.45897609594588!3d48.94864586032174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84e4dd123d254827%3A0x93973300ba936ea3!2zUkMgLSBtdWzEjW92w6Fuw60gTWlrw6lza2E!5e0!3m2!1scs!2scz!4v1768847671825!5m2!1scs!2scz"
+allowfullscreen
+loading="lazy">
+</iframe>
+</div>
+
 </section>
 
+
 <footer>
-  <p>© 2026 Mikeska – strojní sečení a mulčování</p>
+<p>© 2026 Mikeska – strojní sečení a mulčování</p>
 </footer>
 
 <a href="tel:+420774855738" class="call-float">📞</a>
