@@ -2,75 +2,71 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <title>Ukázky práce | RC mulčování Mikeska</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 
 <style>
 
-*{box-sizing:border-box;margin:0;padding:0}
-
 body{
-background:#0f1a14;
-color:white;
-font-family:Arial;
+background:#0f0f0f;
+color:#eaeaea;
+margin:0;
+font-family:"Segoe UI", Arial, sans-serif;
 }
-
-/* HEADER STEJNÝ JAKO POPTVÁVKA */
-
-header{
-background:#0b120e;
-padding:15px 30px;
-display:flex;
-justify-content:flex-end;
-align-items:center;
-border-bottom:1px solid #1f3b2c;
-}
-
-nav a{
-font-weight:600;
-text-decoration:none;
-color:white;
-}
-
-nav a:hover{
-color:#2ecc71;
-}
-
-/* GALERIE */
 
 .gallery{
 max-width:1100px;
-margin:60px auto;
-padding:20px;
+margin:auto;
+padding:120px 20px 60px 20px;
+text-align:center;
 }
 
 .gallery h1{
-text-align:center;
 font-size:40px;
 margin-bottom:10px;
 }
 
 .gallery h1 span{
-color:#2ecc71;
+color:#6bcf4a;
 }
 
 .gallery p{
-text-align:center;
+color:#aaa;
 margin-bottom:60px;
-color:#ccc;
 }
 
-/* SLIDER */
+/* logo */
+
+.gallery-logo{
+margin-bottom:30px;
+}
+
+.gallery-logo img{
+height:60px;
+}
+
+/* tlačítko domů */
+
+.home-btn{
+display:inline-block;
+margin-bottom:40px;
+background:#6bcf4a;
+color:#000;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* slider */
 
 .ba-container{
 position:relative;
 overflow:hidden;
-border-radius:20px;
+border-radius:14px;
 margin-bottom:60px;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-border:1px solid #1f3b2c;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
 .ba-container img{
@@ -96,6 +92,8 @@ opacity:0;
 cursor:ew-resize;
 }
 
+/* čára */
+
 .ba-container::after{
 content:"";
 position:absolute;
@@ -104,26 +102,6 @@ bottom:0;
 left:50%;
 width:3px;
 background:white;
-pointer-events:none;
-}
-
-/* PŘED / PO */
-
-.ba-label{
-position:absolute;
-top:15px;
-padding:6px 12px;
-background:rgba(0,0,0,0.6);
-border-radius:6px;
-font-size:13px;
-}
-
-.ba-label.before{
-left:15px;
-}
-
-.ba-label.after{
-right:15px;
 }
 
 </style>
@@ -131,60 +109,51 @@ right:15px;
 
 <body>
 
-<header>
-<nav>
-<a href="/index.html">Domů</a>
-</nav>
-</header>
-
 <section class="gallery">
+
+<div class="gallery-logo">
+<img src="logo.png" alt="Mikeska">
+</div>
+
+<a href="index.html" class="home-btn">← Domů</a>
 
 <h1><span>Ukázky</span> naší práce</h1>
 <p>Před a po mulčování svahů a neudržovaných ploch.</p>
 
+<!-- 1 -->
+
 <div class="ba-container">
-
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
-
 <img src="po1.jpg">
 
 <div class="ba-after">
-<img src="pred1.jpg">
+<img src="před1.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
-
 </div>
 
+<!-- 2 -->
+
 <div class="ba-container">
-
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
-
 <img src="po2.jpg">
 
 <div class="ba-after">
-<img src="pred2.jpg">
+<img src="před2.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
-
 </div>
 
+<!-- 3 -->
+
 <div class="ba-container">
-
-<div class="ba-label before">PŘED</div>
-<div class="ba-label after">PO</div>
-
 <img src="po3.jpg">
 
 <div class="ba-after">
-<img src="pred3.jpg">
+<img src="před3.jpg">
 </div>
 
 <input type="range" min="0" max="100" value="50" class="ba-slider">
-
 </div>
 
 </section>
