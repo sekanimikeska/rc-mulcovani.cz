@@ -9,19 +9,41 @@
 
 <style>
 
+*{box-sizing:border-box;margin:0;padding:0}
+
 body{
 background:#0f1a14;
 color:white;
 font-family:Arial;
-margin:0;
 }
 
-/* NADPIS */
+/* HEADER STEJNÝ JAKO POPTVÁVKA */
+
+header{
+background:#0b120e;
+padding:15px 30px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+border-bottom:1px solid #1f3b2c;
+}
+
+nav a{
+font-weight:600;
+text-decoration:none;
+color:white;
+}
+
+nav a:hover{
+color:#2ecc71;
+}
+
+/* GALERIE */
 
 .gallery{
 max-width:1100px;
-margin:auto;
-padding:120px 20px 80px 20px;
+margin:60px auto;
+padding:20px;
 }
 
 .gallery h1{
@@ -36,25 +58,8 @@ color:#2ecc71;
 
 .gallery p{
 text-align:center;
-margin-bottom:30px;
-color:#ccc;
-}
-
-/* TLAČÍTKO ZPĚT */
-
-.back-home{
-text-align:center;
 margin-bottom:60px;
-}
-
-.back-home a{
-background:#2ecc71;
-color:#0f1a14;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
+color:#ccc;
 }
 
 /* SLIDER */
@@ -91,8 +96,6 @@ opacity:0;
 cursor:ew-resize;
 }
 
-/* čára mezi obrázky */
-
 .ba-container::after{
 content:"";
 position:absolute;
@@ -128,26 +131,16 @@ right:15px;
 
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <img src="logo.png" class="logo" alt="Mikeska">
-
-    <nav>
-      <a href="index.html">Domů</a>
-      <a href="galerie.html">Ukázky práce</a>
-      <a href="index.html#kontakt">Kontakt</a>
-    </nav>
-  </div>
+<header>
+<nav>
+<a href="/index.html">Domů</a>
+</nav>
 </header>
 
 <section class="gallery">
 
 <h1><span>Ukázky</span> naší práce</h1>
 <p>Před a po mulčování svahů a neudržovaných ploch.</p>
-
-<div class="back-home">
-<a href="index.html">← Zpět na hlavní stránku</a>
-</div>
 
 <div class="ba-container">
 
