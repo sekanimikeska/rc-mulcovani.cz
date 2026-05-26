@@ -17,186 +17,211 @@ body {
   top: 0;
   width: 100%;
   height: 70px;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 1000;
+  background: rgba(0,0,0,.9);
+  z-index:1000;
 }
 
-.topbar-inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.topbar-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.logo {
-  height: 42px;
-  max-width: 180px;
+.logo{
+  height:42px;
+  max-width:180px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+nav{
+  display:flex;
+  align-items:center;
 }
 
-nav a {
-  color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
+nav a{
+  color:#fff;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:500;
+  font-size:15px;
 }
 
-nav a:hover {
-  color: #6bcf4a;
+nav a:hover{
+  color:#6bcf4a;
 }
 
-.btn-call {
-  background: #6bcf4a;
-  color: #000;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+.btn-call{
+  background:#6bcf4a;
+  color:#151515;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* ================= HERO ================= */
 
-.hero {
-  height: calc(100vh - 70px);
-  background: url("hero.jpg") center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.hero{
+  height:calc(100vh - 70px);
+  background:url("hero.jpg") center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.6);
 }
 
-.hero-content {
-  position: relative;
-  max-width: 800px;
-  padding: 20px;
+.hero-content{
+  position:relative;
+  max-width:800px;
+  padding:20px;
 }
 
-.hero h1 {
-  font-size: 52px;
+.hero h1{
+  font-size:52px;
 }
 
-.hero h1 span {
-  color: #6bcf4a;
+.hero h1 span{
+  color:#6bcf4a;
 }
 
-.hero p {
-  font-size: 22px;
-  margin-bottom: 30px;
+.hero p{
+  font-size:22px;
+  margin-bottom:30px;
 }
 
 /* ================= BUTTONS ================= */
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
 }
 
-.btn-primary {
-  background: #6bcf4a;
-  color: #000;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+.btn-primary{
+  background:#6bcf4a;
+  color:#151515;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-.btn-secondary {
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
+.btn-secondary{
+  border:2px solid #fff;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
 }
 
 /* ================= SECTIONS ================= */
 
-.section {
-  padding: 100px 20px;
-  text-align: center;
+.section{
+  padding:100px 20px;
+  text-align:center;
 }
 
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+.section h2{
+  font-size:36px;
+  margin-bottom:40px;
 }
 
-.dark {
-  background: #6bcf4a;
+/* světle zelené sekce */
+
+.dark{
+  background:#6bcf4a;
+  color:#151515;
+}
+
+.dark h2,
+.dark p,
+.dark li,
+.dark h3{
+color:#151515;
 }
 
 /* ================= CARDS ================= */
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
 }
 
-.card {
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 10px;
+.card{
+background:#1e1e1e;
+padding:30px;
+border-radius:10px;
 }
 
-.card h3 {
-  color: #6bcf4a;
+.card h3{
+color:#6bcf4a;
 }
 
 /* ================= BENEFITS ================= */
 
-.benefits {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: auto;
+.benefits{
+list-style:none;
+padding:0;
+max-width:700px;
+margin:auto;
 }
 
-.benefits li {
-  margin: 15px 0;
-  font-size: 18px;
+.benefits li{
+margin:15px 0;
+font-size:18px;
+color:#151515;
+}
+
+/* ================= KONTAKT ================= */
+
+/* kontakt bude mít stejnou světle zelenou */
+
+#kontakt{
+background:#6bcf4a;
+color:#151515;
+}
+
+#kontakt h2,
+#kontakt p,
+#kontakt a,
+#kontakt li{
+color:#151515;
 }
 
 /* ================= FOOTER ================= */
 
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #aaa;
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+font-size:14px;
+color:#aaa;
 }
 
 /* ================= MOBILE ================= */
 
-@media (max-width:768px) {
+@media (max-width:768px){
 
-.hero h1 {
+.hero h1{
 font-size:38px;
 }
 
-nav {
+nav{
 display:none;
 }
-
-/* tlačítka pod sebe */
 
 .hero-buttons{
 flex-direction:column;
