@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -71,6 +72,24 @@
             color: #2ecc71;
         }
 
+        .price-box table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .price-box th {
+            background: #2ecc71;
+            color: #0f1a14;
+            padding: 14px;
+        }
+
+        .price-box td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #2a3d31;
+        }
+
         /* ===== FORM ===== */
         form {
             text-align: left;
@@ -118,6 +137,22 @@
             background: #27ae60;
             transform: translateY(-2px);
         }
+
+        @media(max-width:768px){
+
+            .price-box{
+                padding:20px;
+            }
+
+            .price-box table{
+                font-size:14px;
+            }
+
+            .price-box th,
+            .price-box td{
+                padding:10px 6px;
+            }
+        }
     </style>
 </head>
 
@@ -131,7 +166,6 @@
 
 <div class="container">
 
-    <!-- LOGO NAD NADPISEM -->
     <div class="top-logo">
         <img src="logo.png" alt="RC Mulčování">
     </div>
@@ -139,23 +173,70 @@
     <h1>Nezávazná poptávka služeb</h1>
 
     <div class="price-box">
+
         <p>Každá zakázka je individuální. Cena se odvíjí zejména od:</p>
-        <ul>
+
+        <ul style="margin:15px 0 25px 20px;">
             <li>rozlohy pozemku</li>
             <li>sklonu svahu</li>
             <li>hustoty porostu</li>
             <li>přístupnosti terénu</li>
         </ul>
 
+        <h2 style="color:#2ecc71;margin-bottom:15px;">
+            Orientační ceny
+        </h2>
+
+        <div style="overflow-x:auto;">
+
+            <table>
+
+                <tr>
+                    <th>Velikost plochy</th>
+                    <th>Mírný svah<br>(do 15°)</th>
+                    <th>Střední svah<br>(15–30°)</th>
+                    <th>Prudký svah<br>(nad 30°)</th>
+                </tr>
+
+                <tr>
+                    <td>do 2 000 m²</td>
+                    <td>2,50 Kč/m²</td>
+                    <td>3,50 Kč/m²</td>
+                    <td>5,00 Kč/m²</td>
+                </tr>
+
+                <tr>
+                    <td>2 001–6 000 m²</td>
+                    <td>2,00 Kč/m²</td>
+                    <td>3,00 Kč/m²</td>
+                    <td>4,50 Kč/m²</td>
+                </tr>
+
+                <tr>
+                    <td>nad 6 000 m²</td>
+                    <td>1,50 Kč/m²</td>
+                    <td>2,50 Kč/m²</td>
+                    <td>4,00 Kč/m²</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br>
+
         <p>
-            <strong>Orientační ceny:</strong><br>
-            Sečení a mulčování od <strong>2 Kč / m²</strong><br>
-            Svahový a nepřístupný terén od <strong>5 Kč / m²</strong><br>
-            Budou účtovány náklady spojené s přepravou
+            <strong>Budou účtovány náklady spojené s přepravou.</strong>
         </p>
 
-        <p>Pro přesnou kalkulaci mi pošlete poptávku – ozvu se co nejdříve.</p>
-        <p>nejsem plátce DPH</p>
+        <p style="margin-top:10px;">
+            Pro přesnou kalkulaci mi pošlete poptávku – ozvu se co nejdříve.
+        </p>
+
+        <p style="margin-top:15px;color:#2ecc71;font-weight:bold;">
+            Nejsem plátce DPH.
+        </p>
+
     </div>
 
     <form action="https://formsubmit.co/sekani.mikeska@gmail.com" method="POST">
@@ -182,7 +263,8 @@
         <select name="Terén">
             <option>Rovina</option>
             <option>Mírný svah</option>
-            <option>Strmý svah</option>
+            <option>Střední svah</option>
+            <option>Prudký svah</option>
             <option>Obtížně přístupný terén</option>
         </select>
 
@@ -196,3 +278,4 @@
 
 </body>
 </html>
+```
