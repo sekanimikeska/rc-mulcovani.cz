@@ -15,4 +15,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-svahu.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-fve.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-sady-vinice.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-obce-firmy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-hodonin.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rc-mulcovani.cz/mulcovani-uherske-hradiste.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
